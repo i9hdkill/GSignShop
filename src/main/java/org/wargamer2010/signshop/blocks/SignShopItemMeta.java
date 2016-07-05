@@ -111,9 +111,9 @@ public class SignShopItemMeta {
         if(!isLegacy()) {
             if(stack.getItemMeta() != null) {
                 String custom = (stack.getItemMeta().hasDisplayName()
-                            ? (txtcolor + "\"" + customcolor + stack.getItemMeta().getDisplayName() + txtcolor + "\"") : "");
+                            ? (customcolor + stack.getItemMeta().getDisplayName()) : "");
                 if(custom.length() > 0)
-                    displayname = (custom + " (" + normal + ")" + txtcolor);
+                    displayname = (custom + txtcolor);
             }
         }
         if(displayname.isEmpty())
